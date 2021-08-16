@@ -10,7 +10,7 @@ import routes from "./routes/routes";
 export const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 
-const token = "ODU1OTI1NzEwNjAxNDUzNTg5.YM5k7w.EHvWOY5JH7cE7OYCupb3hYsjMWk";
+const token = tokens.token;
 const prefix = "_";
 const url = tokens.url || "mongodb://localhost:27017/duels";
 
