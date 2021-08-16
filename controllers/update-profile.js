@@ -5,6 +5,7 @@ const User = mongoose.model("Users", PlayerSchema);
 
 export const updateProfile = (req, res) => {
   User.updateOne(req.params, req.body, (err, doc) => {
+    console.log(doc);
     if (doc) res.send(doc);
     else res.sendStatus(404);
   });
