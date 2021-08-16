@@ -14,9 +14,6 @@ export const PlayerSchema = new Schema(
     Coins: {
       type: Number,
     },
-    Clan: {
-      type: Number,
-    },
     LastLogin: {
       type: String,
     },
@@ -28,6 +25,9 @@ export const PlayerSchema = new Schema(
     },
     Title: {
       type: Object,
+    },
+    Inventory: {
+      type: String,
     },
   },
   { collection: "duels" }

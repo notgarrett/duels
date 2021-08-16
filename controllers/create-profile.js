@@ -17,7 +17,6 @@ export const createProfile = async (req, res) => {
     RobloxId: req.body.RobloxId,
     Level: { CurrentXP: 0, Level: 1, Prestige: 0 },
     Coins: 0,
-    Clan: 1,
     LastLogin: loginTime,
     Kills: 0,
     Deaths: 0,
