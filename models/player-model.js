@@ -29,6 +29,10 @@ export const PlayerSchema = new Schema(
     Inventory: {
       type: String,
     },
+    Wins: {
+      type: Number,
+    },
+    Losses: { type: Number },
   },
   { collection: "duels" }
 );

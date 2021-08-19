@@ -23,6 +23,7 @@ export const createProfile = async (req, res) => {
   });
 
   player.save((err, profile) => {
+    if (err) throw err;
     res.send(profile);
   });
 };
