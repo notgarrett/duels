@@ -11,7 +11,7 @@ export const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 
 const token = tokens.token;
-const prefix = "_";
+const prefix = ">";
 const url = tokens.url || "mongodb://localhost:27017/duels";
 
 const commandFiles = fs
@@ -70,6 +70,9 @@ bot.on("message", (msg) => {
     ////////////////////////////////////////////
     if (args[0] == "level") {
       bot.commands.get("level").execute(msg, args);
+    }
+    if (args[0] == "wipe" && checkBotAdmin(msg)) {
+      bot.commands.get("wipe").execute(msg, args);
     }
   }
 });
